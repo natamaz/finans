@@ -1,0 +1,2383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Доходы и расходы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user-account.css">
+</head>
+
+<body>
+
+    <!-- build:section layout.user_header-->
+    <!-- /build -->
+
+    <div class="wrapper">
+        <!-- build:section layout.userAcc_sidebar-->
+        <!-- /build -->
+        <div class="content">
+            <div class="content__blk">
+                <div class="content__blk_heading">
+                    <h2>Доходы и расходы</h2>
+                </div>
+                <div class="content__blk_body">
+                    <div class="flex-text">
+                        <div class="item">
+                            <p>Разобравшись с активами, важно грамотно и честно структурировать все Ваши источники поступления доходов, а также, что еще более важно – источники расходов. </p>
+                            <p>В таблице ниже заполните информацию по тем категориям, которые приносят Вам деньги, и те категории, которые являются источниками расходов. Вы можете заносить как регулярные статьи (например, заработная плата), так и </p>
+                        </div>
+                        <div class="item">
+                            <p>одиночные (например, премия). Для Вашего удобства и будущего управления сгруппируйте их в категории (например, Недвижимость, Инвестиции и т.д.)</p>
+                            <p>Важно сохранять системный взгляд хота бы в масштабах года, для того, чтобы понимать свой финансовый результат и инвестиционные возможности. Занесите усредненные показатели, в дальнейшем Вы сможете уточнить цифры.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__wrap">
+                <div class="content__blk">
+                    <div class="content__blk_heading">
+                        <h2>График доходов и расходов за год<span class="tooltip">?</span></h2>
+                        <div class="tooltip_hidden">
+                            <div class="close-tooltip">x</div>
+                            <p>Этот график показывает, как меняются статьи доходов и расходов в течение года. Вы сможете увидеть, имеются ли месяцы, когда Вы можете получить неожиданную просадку, или месяцы, когда Вы можете сформировать основной инвестиционный
+                                капитал.</p>
+                        </div>
+                    </div>
+                    <div class="content__blk_body">
+                        <div class="ct-chart graphView-4" id="chart5"></div>
+                        <!-- <img src="../img/graph5.jpg" alt=""> -->
+                    </div>
+                </div>
+
+                <div class="content__blk">
+                    <div class="content__blk_heading">
+                        <h2>График доходов и расходов за год<span class="tooltip">?</span></h2>
+                        <div class="tooltip_hidden">
+                            <div class="close-tooltip">x</div>
+                            <p>Этот график показывает, какой финансовый баланс Вы имеете в среднем в год, чтобы на дальнейших шагах планировать свой инвестиционный портфель. </p>
+                        </div>
+                    </div>
+                    <div class="content__blk_body">
+                        <p>Возможность инвестиции: <strong>1 043</strong> тыс. руб (<strong>34%</strong> годового дохода)</p>
+                        <div class="ct-chart graphView-5" id="chart6"></div>
+                        <!-- <img src="../img/graph6.jpg" alt=""> -->
+                        <div class="ct-chart graphView-6" id="chart7"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__blk">
+                <div class="content__blk_heading">
+                    <h2>График с факторным анализом<span class="tooltip">?</span></h2>
+                    <div class="tooltip_hidden">
+                        <div class="close-tooltip">x</div>
+                        <p>На этом графике Афина покажет, что именно вымывает Ваши деньги из семейного бюджета, на какие категории следует взглянуть особенно внимательно, ведь эти категории отдаляют Вас от достижения долгосрочных финансовых целей</p>
+                    </div>
+                </div>
+                <div class="content__blk_body">
+                    <h5>Доходы</h5>
+                    <div class="ct-chart graphView-8" id="chart8"></div>
+                    <h5>Расходы</h5>
+                    <div class="ct-chart graphView-8 v2" id="chart9"></div>
+                    <!-- <img src="../img/graph7.jpg" alt=""> -->
+                </div>
+            </div>
+
+            <div class="content__blk">
+                <div class="content__blk_body withTable">
+                    <div class="tableCalendar">
+                        <div class="row head">
+                            <div class="cell">
+                                <h2>Доходы <span>(тыс. руб.)</span></h2>
+                            </div>
+                            <div class="cell">
+                                <p>Итого</p>
+                            </div>
+                            <div class="cell">
+                                <p>Янв</p>
+                            </div>
+                            <div class="cell">
+                                <p>Фев</p>
+                            </div>
+                            <div class="cell">
+                                <p>Мар</p>
+                            </div>
+                            <div class="cell">
+                                <p>Апр</p>
+                            </div>
+                            <div class="cell">
+                                <p>Май</p>
+                            </div>
+                            <div class="cell">
+                                <p>Июн</p>
+                            </div>
+                            <div class="cell">
+                                <p>Июл</p>
+                            </div>
+                            <div class="cell">
+                                <p>Авг</p>
+                            </div>
+                            <div class="cell">
+                                <p>Сен</p>
+                            </div>
+                            <div class="cell">
+                                <p>Окт</p>
+                            </div>
+                            <div class="cell">
+                                <p>Ноя</p>
+                            </div>
+                            <div class="cell">
+                                <p>Дек</p>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>С основного места работы</p>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Оклад</p>
+                                </div>
+                                <div class="cell">
+                                    <p>1440</p>
+                                </div>
+                                <div class="cell">
+                                    <p>120</p>
+                                </div>
+                                <div class="cell">
+                                    <p>120</p>
+                                </div>
+                                <div class="cell">
+                                    <p>120</p>
+                                </div>
+                                <div class="cell">
+                                    <p>120</p>
+                                </div>
+                                <div class="cell">
+                                    <p>120</p>
+                                </div>
+                                <div class="cell">
+                                    <p>120</p>
+                                </div>
+                                <div class="cell">
+                                    <p>120</p>
+                                </div>
+                                <div class="cell">
+                                    <p>120</p>
+                                </div>
+                                <div class="cell">
+                                    <p>120</p>
+                                </div>
+                                <div class="cell">
+                                    <p>120</p>
+                                </div>
+                                <div class="cell">
+                                    <p>120</p>
+                                </div>
+                                <div class="cell">
+                                    <p>120</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Бонус</p>
+                                </div>
+                                <div class="cell">
+                                    <p>250</p>
+                                </div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">
+                                    <p>100</p>
+                                </div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">
+                                    <p>150</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Премии</p>
+                                </div>
+                                <div class="cell">
+                                    <p>100</p>
+                                </div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">
+                                    <p>50</p>
+                                </div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">
+                                    <p>50</p>
+                                </div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>Недвижимость</p>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Рента</p>
+                                </div>
+                                <div class="cell">
+                                    <p>1080</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>Инвестиции</p>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Счет в банке</p>
+                                </div>
+                                <div class="cell">
+                                    <p>84</p>
+                                </div>
+                                <div class="cell">
+                                    <p>7</p>
+                                </div>
+                                <div class="cell">
+                                    <p>7</p>
+                                </div>
+                                <div class="cell">
+                                    <p>7</p>
+                                </div>
+                                <div class="cell">
+                                    <p>7</p>
+                                </div>
+                                <div class="cell">
+                                    <p>7</p>
+                                </div>
+                                <div class="cell">
+                                    <p>7</p>
+                                </div>
+                                <div class="cell">
+                                    <p>7</p>
+                                </div>
+                                <div class="cell">
+                                    <p>7</p>
+                                </div>
+                                <div class="cell">
+                                    <p>7</p>
+                                </div>
+                                <div class="cell">
+                                    <p>7</p>
+                                </div>
+                                <div class="cell">
+                                    <p>7</p>
+                                </div>
+                                <div class="cell">
+                                    <p>7</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Счет в банке</p>
+                                </div>
+                                <div class="cell">
+                                    <p>36</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Акции</p>
+                                </div>
+                                <div class="cell">
+                                    <p>36</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Облигации</p>
+                                </div>
+                                <div class="cell">
+                                    <p>36</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="cell">
+                                    <p>3</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>Недвижимость</p>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Рента</p>
+                                </div>
+                                <div class="cell">
+                                    <p>1080</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <form class="addForm">
+                                <div class="row title">
+                                    <input type="text">
+                                </div>
+                                <a href="javascript:void(0)" class="saveData">сохранить</a>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить группу</a>
+                            </div>
+                        </div>
+                        <div class="row results">
+                            <div class="cell">
+                                <p>ИТОГО</p>
+                            </div>
+                            <div class="cell">
+                                <p>3026</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__blk">
+                <div class="content__blk_body withTable">
+                    <div class="tableCalendar">
+                        <div class="row head">
+                            <div class="cell">
+                                <h2>Расходы <span>(тыс. руб.)</span></h2>
+                            </div>
+                            <div class="cell">
+                                <p>Итого</p>
+                            </div>
+                            <div class="cell">
+                                <p>Янв</p>
+                            </div>
+                            <div class="cell">
+                                <p>Фев</p>
+                            </div>
+                            <div class="cell">
+                                <p>Мар</p>
+                            </div>
+                            <div class="cell">
+                                <p>Апр</p>
+                            </div>
+                            <div class="cell">
+                                <p>Май</p>
+                            </div>
+                            <div class="cell">
+                                <p>Июн</p>
+                            </div>
+                            <div class="cell">
+                                <p>Июл</p>
+                            </div>
+                            <div class="cell">
+                                <p>Авг</p>
+                            </div>
+                            <div class="cell">
+                                <p>Сен</p>
+                            </div>
+                            <div class="cell">
+                                <p>Окт</p>
+                            </div>
+                            <div class="cell">
+                                <p>Ноя</p>
+                            </div>
+                            <div class="cell">
+                                <p>Дек</p>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>Автомобиль</p>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Авто 1</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>10</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>25</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>10</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Авто 2</p>
+                                </div>
+                                <div class="cell">
+                                    <p>90</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>10</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>25</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>10</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>Поощрения</p>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Подарки</p>
+                                </div>
+                                <div class="cell">
+                                    <p>50</p>
+                                </div>
+                                <div class="cell">
+                                    <p>20</p>
+                                </div>
+                                <div class="cell"></div>
+                                <div class="cell">
+                                    <p>10</p>
+                                </div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">
+                                    <p>20</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Покупки себе</p>
+                                </div>
+                                <div class="cell">
+                                    <p>20</p>
+                                </div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">
+                                    <p>20</p>
+                                </div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Семейные праздники</p>
+                                </div>
+                                <div class="cell">
+                                    <p>30</p>
+                                </div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">
+                                    <P>10</P>
+                                </div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">
+                                    <p>20</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>Кредиты</p>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Ипотека</p>
+                                </div>
+                                <div class="cell">
+                                    <p>564</p>
+                                </div>
+                                <div class="cell">
+                                    <p>47</p>
+                                </div>
+                                <div class="cell">
+                                    <p>47</p>
+                                </div>
+                                <div class="cell">
+                                    <p>47</p>
+                                </div>
+                                <div class="cell">
+                                    <p>47</p>
+                                </div>
+                                <div class="cell">
+                                    <p>47</p>
+                                </div>
+                                <div class="cell">
+                                    <p>47</p>
+                                </div>
+                                <div class="cell">
+                                    <p>47</p>
+                                </div>
+                                <div class="cell">
+                                    <p>47</p>
+                                </div>
+                                <div class="cell">
+                                    <p>47</p>
+                                </div>
+                                <div class="cell">
+                                    <p>47</p>
+                                </div>
+                                <div class="cell">
+                                    <p>47</p>
+                                </div>
+                                <div class="cell">
+                                    <p>47</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>Рента</p>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Аренда паркинга</p>
+                                </div>
+                                <div class="cell">
+                                    <p>60</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>Семья</p>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Садик</p>
+                                </div>
+                                <div class="cell">
+                                    <p>60</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Такси и трансфер</p>
+                                </div>
+                                <div class="cell">
+                                    <p>60</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>Быт</p>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Продукты</p>
+                                </div>
+                                <div class="cell">
+                                    <p>60</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Обеды на работе</p>
+                                </div>
+                                <div class="cell">
+                                    <p>60</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Одежда</p>
+                                </div>
+                                <div class="cell">
+                                    <p>60</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Непредвиденные расходы</p>
+                                </div>
+                                <div class="cell">
+                                    <p>60</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>Эмоции</p>
+                            </div>
+                            <div class="tableBlk">
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                                <div class="row title">
+                                    <p>Отпуск</p>
+                                </div>
+                                <div class="row">
+                                    <div class="cell">
+                                        <p>В России - на Новый Год</p>
+                                    </div>
+                                    <div class="cell">
+                                        <p>50</p>
+                                    </div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell">
+                                        <p>50</p>
+                                    </div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell">
+                                        <p>Европа - весной</p>
+                                    </div>
+                                    <div class="cell">
+                                        <p>100</p>
+                                    </div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell">
+                                        <p>100</p>
+                                    </div>
+                                    <div class="cell"></div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell">
+                                        <p>Турция - осенью</p>
+                                    </div>
+                                    <div class="cell">
+                                        <p>100</p>
+                                    </div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell">
+                                        <p>100</p>
+                                    </div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell">
+                                        <p>Россия - в течение года</p>
+                                    </div>
+                                    <div class="cell">
+                                        <p>40</p>
+                                    </div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell">
+                                        <p>40</p>
+                                    </div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="cell"></div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Посещение интересных мест</p>
+                                </div>
+                                <div class="cell">
+                                    <p>60</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>Спортзал и здоровье</p>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Спортзал</p>
+                                </div>
+                                <div class="cell">
+                                    <p>60</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="row title">
+                                <p>Поддержка и благотворительность</p>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Родителям</p>
+                                </div>
+                                <div class="cell">
+                                    <p>60</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5</p>
+                                </div>
+                                <div class="panel">
+                                    <a href="javascript.void(0)" class="deleteRow"></a>
+                                    <a href="javascript.void(0)" class="editRow"></a>
+                                </div>
+                            </div>
+                            <form class="addForm">
+                                <div class="row">
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                    <div class="cell">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                </div>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                            </div>
+                        </div>
+                        <div class="tableBlk">
+                            <form class="addForm">
+                                <div class="row title">
+                                    <input type="text">
+                                </div>
+                                <a href="javascript:void(0)" class="saveData">сохранить</a>
+                            </form>
+                            <div class="row">
+                                <a href="javascript:void(0)" class="addMore">+ добавить группу</a>
+                            </div>
+                        </div>
+                        <div class="row results">
+                            <div class="cell">
+                                <p>ИТОГО</p>
+                            </div>
+                            <div class="cell">
+                                <p>3026</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                            <div class="cell">
+                                <p>223</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- build:section layout.footer-->
+    <!-- /build -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/chartist.min.js"></script>
+    <script src="../js/chartist-plugin-legend.min.js"></script>
+    <script src="../js/chartist-plugin-axistitle.min.js"></script>
+
+    <script>
+        //График доходов и расходов за год
+        var labelsGraph1 = ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+            firstDataGraph1 = [0, 500, 1000, 1400, 2140, 2200, 2600, 2700, 3000, 3100, 3150, 3300],
+            secondDataGraph1 = [0, 300, 700, 900, 1400, 1550, 1700, 1960, 2000, 2410, 2500, 2800];
+        axisXGraph1 = "месяц",
+            axisYGraph1 = "тыс. руб.",
+
+            //Доходы за год
+            dataGraph2 = [
+                [1000],
+                [700],
+                [700]
+            ],
+            maxValue = 2500,
+            axisXGraph2 = "Доходы за год, тыс. руб.";
+
+        //Расходы за год
+        dataGraph3 = [
+                [1400],
+                [300],
+                [200]
+            ],
+            axisXGraph3 = "Расходы за год, тыс. руб."
+
+        // График с факторным анализом Доходы
+        labelsGraph4 = ['С основного места работы', 'Недвижимость', 'Инвестиции'],
+
+            // значения задаются следующим образом:
+            //      
+            //      [1000, 200, 100], - тут указывается кол-во поинтов, которые будут закрашены, начиная с начальной точки
+            //      [0, 1000, 1200] - тут указывается начальная точка
+            //      
+            //      то есть 1й столбик будет с 0 до 1000, 2й с 1000 до 1200(1000+200), 3й с 1200 до 1300 (1200+100)
+            dataGraph4 = [
+                [1000, 200, 100],
+                [0, 1000, 1200]
+            ],
+            maxIncome = 1300, //максимальное число дохода (100+1200)
+            gridHeightGraph4 = (labelsGraph4.length * 33 + 50), // labelsGraph4.length - кол-во столбцов
+
+            //График с факторным анализм Расходы
+            labelsGraph5 = ['Автомобиль', 'Поощрения', 'Кредиты', 'Рента', 'Семья', 'Быт', 'Эмоции', 'Спортзал и здоровье', 'Поддержка и благотворительность'],
+            // значения задаются с учётом того, что отсчет идёт от максимального значения, которое берётся с chart8:
+            //      [300, 200, 145, 30, 100, 25, 65, 100, 20], - тут указывается кол-во поинтов, которые будут закрашены, начиная с начальной точки
+            //      [1000, 800, 655, 625, 525, 500, 435, 335, 315] - тут указывается начальная точка (отсчет с конца)
+            //      то есть 1й столбик будет с 1000 до 1300, 2й с 800 до 1000(800+200), 3й с 655 до 800 (645+155) и тд.
+            dataGraph5 = [
+                [300, 200, 145, 30, 100, 25, 65, 100, 20],
+                [1000, 800, 655, 625, 525, 500, 435, 335, 315]
+            ],
+            gridHeightGraph5 = (labelsGraph5.length * 33 + 50);
+    </script>
+
+    <script src="../js/script.min.js"></script>
+    <script src="../js/user-account.min.js"></script>
+    <script src="../js/income-expenses.min.js"></script>
+
+</body>
+
+</html>

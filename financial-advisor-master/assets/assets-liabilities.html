@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Активы и пассивы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user-account.css">
+</head>
+<body>
+
+<!-- build:section layout.user_header-->
+<!-- /build -->
+
+<div class="wrapper">
+    <!-- build:section layout.userAcc_sidebar-->
+    <!-- /build -->
+    <div class="content">
+        <div class="content__blk">
+            <div class="content__blk_heading">
+                <h2>Активы и пассивы</h2>
+            </div>
+            <div class="content__blk_body">
+                <div class="flex-text">
+                    <div class="item">
+                        <p>Следующим шагом важно понимать, какими активами и пассивами Вы располагаете. Иными словами, положительный или отрицательный у Вас баланс капитал.  </p>
+                        <p><strong>Активы</strong> – это категории Вашего капитала, который способен генерировать дополнительный денежный поток. 
+                        </p>
+                        <p><strong>Пассивы</strong> – то, что приводит к оттоку денежных средств. </p>
+                    </div>
+                    <div class="item">
+                        <p>Одна и та же квартира может быть активом, если Вы сдаете ее в аренду и имеете с этого финансовый поток сверх ипотечного платежа, или пассивом, если эта квартира простаивает в другом городе и Вы лишь платите за нее налоги.</p>
+                        <p>Вспомните и занесите в таблице ниже все источники Активов и Пассивов, а Афина покажет Ваш финансовый баланс по капиталу. Для Вашего удобства и будущего управления сгруппируйте их в категории (например, Недвижимость, Автомобиль и т.д.)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__blk">
+            <div class="content__blk_heading">
+                <h2>График активов и пассивов<span class="tooltip">?</span></h2>
+                <div class="tooltip_hidden">
+                    <div class="close-tooltip">x</div>
+                    <p>Этот график показывает баланс категорий по Вашим Активам и Пассивам</p>
+                </div>
+            </div>
+            <div class="content__blk_body">
+                <div class="flex-3">
+                    <div class="item">
+                        <div class="table-2 left">
+                            <div class="row">
+                                <div class="cell"><h4>Пассивы</h4></div>
+                                <div class="cell"></div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>Ипотека</p>
+                                </div>
+                                <div class="cell">
+                                    <p>5 750</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item graph">
+                        <div class="ct-chart  graphView-3" id="chart3"></div>
+                        <!-- <img src="../img/graph3.jpg" alt="image"> -->
+                    </div>
+                    <div class="item">
+                        <div class="table-2 right">
+                            <div class="row">
+                                <div class="cell"></div>
+                                <div class="cell">
+                                    <h4>Активы</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>8 000</p>
+                                </div>
+                                <div class="cell">
+                                    <p>Квартира</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>2 500</p>
+                                </div>
+                                <div class="cell">
+                                    <p>Авто</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>700</p>
+                                </div>
+                                <div class="cell">
+                                    <p>Авто</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>1 000</p>
+                                </div>
+                                <div class="cell">
+                                    <p>Счет в банке</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>500</p>
+                                </div>
+                                <div class="cell">
+                                    <p>Счет в банке</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>1 400</p>
+                                </div>
+                                <div class="cell">
+                                    <p>Акции</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>1 900</p>
+                                </div>
+                                <div class="cell">
+                                    <p>Облигации</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">
+                                    <p>700</p>
+                                </div>
+                                <div class="cell">
+                                    <p>Дал в долг</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__blk_heading">
+                <h2>Суммарный график активов и пассивов</h2>
+            </div>
+            <div class="content__blk_body">
+                <div class="flex-3 center">
+                    <div class="item"></div>
+                    <div class="item graph">
+                        <div class="ct-chart  graphView-3" id="chart4"></div>
+                        <!-- <img src="../img/graph4.jpg" alt="graph"> -->
+                    </div>
+                    <div class="item">
+                        <p>10 950 руб</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__wrap">
+            <div class="content__blk">
+                <div class="content__blk_heading">
+                    <h3>ПАССИВЫ</h3>
+                </div>
+                <div class="content__blk_body">
+                    <div class="table-3"> 
+                        <div class="row">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="title">
+                                <p>Недвижимость</p>
+                            </div>
+                            <div class="infoBlk">
+                                <div class="innerRow">
+                                    <div class="item">
+                                        <p>Ипотека</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>5 750</p>
+                                    </div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <form class="addForm">
+                                    <div class="innerRow">
+                                        <div class="item">
+                                            <input type="text">
+                                        </div>
+                                        <div class="item">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="innerRow">
+                                        <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                    </div>
+                                </form>
+                                <div class="innerRow">
+                                    <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addForm">
+                            <div class="row">
+                                <div class="title">
+                                    <input type="text">
+                                </div>
+                                <a href="javascript:void(0)" class="saveData">сохранить</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="javascript:void(0)" class="addMore">+ добавить группу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__blk">
+                <div class="content__blk_heading">
+                    <h3>АКТИВЫ</h3>
+                </div>
+                <div class="content__blk_body">
+                    <div class="table-3">
+                        <div class="row">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="title">
+                                <p>Недвижимость</p>
+                            </div>
+                            <div class="infoBlk">
+                                <div class="innerRow">
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                    <div class="item">
+                                        <p>Квартира</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>8 000</p>
+                                    </div>
+                                </div>
+                                <form class="addForm">
+                                    <div class="innerRow">
+                                        <div class="item">
+                                            <input type="text">
+                                        </div>
+                                        <div class="item">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="innerRow">
+                                        <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                    </div>
+                                </form>
+                                <div class="innerRow">
+                                    <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="title">
+                                <p>Автомобиль</p>
+                            </div>
+                            <div class="infoBlk">
+                                <div class="innerRow">
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                    <div class="item">
+                                        <p>Авто</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>2 500</p>
+                                    </div>
+                                </div>
+                                <div class="innerRow">
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                    <div class="item">
+                                        <p>Авто</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>700</p>
+                                    </div>
+                                </div>
+                                <form class="addForm">
+                                    <div class="innerRow">
+                                        <div class="item">
+                                            <input type="text">
+                                        </div>
+                                        <div class="item">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="innerRow">
+                                        <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                    </div>
+                                </form>
+                                <div class="innerRow">
+                                    <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="panel">
+                                <a href="javascript.void(0)" class="deleteRow"></a>
+                                <a href="javascript.void(0)" class="editRow"></a>
+                            </div>
+                            <div class="title">
+                                <p>Инвестиции</p>
+                            </div>
+                            <div class="infoBlk">
+                                <div class="innerRow">
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                    <div class="item">
+                                        <p>Счет в банке</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>1 000</p>
+                                    </div>
+                                </div>
+                                <div class="innerRow">
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                    <div class="item">
+                                        <p>Счет в банке</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>500</p>
+                                    </div>
+                                </div>
+                                <div class="innerRow">
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                    <div class="item">
+                                        <p>Акции</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>2 000</p>
+                                    </div>
+                                </div>
+                                <div class="innerRow">
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                    <div class="item">
+                                        <p>Облигации</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>1 900</p>
+                                    </div>
+                                </div>
+                                <div class="innerRow">
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                    <div class="item">
+                                        <p>Дал в долг</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>700</p>
+                                    </div>
+                                </div>
+                                <form class="addForm">
+                                    <div class="innerRow">
+                                        <div class="item">
+                                            <input type="text">
+                                        </div>
+                                        <div class="item">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="innerRow">
+                                        <a href="javascript:void(0)" class="saveData">сохранить</a>
+                                    </div>
+                                </form>
+                                <div class="innerRow">
+                                    <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addForm">
+                            <div class="row">
+                                <div class="title">
+                                    <input type="text">
+                                </div>
+                                <a href="javascript:void(0)" class="saveData">сохранить</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="javascript:void(0)" class="addMore">+ добавить группу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<!-- build:section layout.footer-->
+<!-- /build -->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/chartist.min.js"></script>
+<script src="../js/chartist-plugin-legend.min.js"></script>
+<script src="../js/chartist-plugin-axistitle.min.js"></script>
+
+<script>
+    //График активов и пассивов
+    var dataLine = [
+            [11, 5, 4, 4, 3],
+            [-3, 0, 0, 0, 0]
+        ],
+        maxValue = 16,
+        lowValue = -16,
+    //Суммарный график активов и пассивов
+        // dataLineGraph2 = [
+        //     [0],
+        //     [-10]
+        // ],
+        dataLineGraph2 = [
+            [10],
+            [0]
+        ];
+
+</script>
+
+<script src="../js/script.min.js"></script>
+<script src="../js/user-account.min.js"></script>
+<script src="../js/assets-liabilities.min.js"></script>
+
+</body>
+</html>

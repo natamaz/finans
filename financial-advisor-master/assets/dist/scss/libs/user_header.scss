@@ -1,0 +1,166 @@
+@import "flexbox";
+
+
+.header{
+    background-color: #1b267b;
+    padding: 15px 10px;
+    &__wrap{
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+    }
+    .leftBlk{
+        @include flexbox;
+        @include align-items(center);
+    }
+    .toggle-menu{
+        width: 21px;
+        height: 15px;
+        z-index: 11;
+        border: 0 none;
+        position: relative;
+        background-color: transparent;
+        cursor: pointer;
+        margin-right: 10px;
+        .sandwich {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 11;
+            display: block;
+            width: 100%;
+        }
+        span {
+            display: block;
+        }
+        .sw-topper {
+            position: relative;
+            top: 0;
+            height: 2px;
+            background: #fff;
+            border: none;
+            border-radius: 0;
+            transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition-delay: 0.1s;
+            -moz-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+        }
+        .sw-bottom {
+            position: relative;
+            height: 2px;
+            top: 4px;
+            background: #fff;
+            border: none;
+            border-radius: 0;
+            transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition-delay: 0.1s;
+            -moz-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+        }
+        .sw-footer {
+            position: relative;
+            height: 2px;
+            top: 8px;
+            background: #fff;
+            border: none;
+            border-radius: 0;
+            transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+            -webkit-transition-delay: 0.1s;
+            -moz-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+        }
+    }
+    &__logo{
+        display: inline-block;
+        height: 18px;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    &__user{
+        @include flexbox;
+        @include align-items(center);
+        .userLink{
+            display: block;
+            @include flexbox;
+            @include align-items(center);
+            margin-right: 20px;
+        }
+        .avatar{
+            width: 31px;
+            height: 31px;
+            border: 1px solid #a8c2e2;
+            background-color: #1b267b;
+            border-radius: 50%;
+            position: relative;
+            margin-right: 10px;
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 14px;
+                max-height: 100%;
+            }
+        }
+        p,a{
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        &__logo {
+            height: 28px;
+        }
+        &__user{
+            .avatar{
+                width: 51px;
+                height: 51px;
+                margin-right: 15px;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+        .userLink{
+            margin-right: 55px;
+        }
+        p,a{
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .header {
+        padding: 15px 20px;
+        .toggle-menu{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .header{
+        padding: 15px 50px 15px 116px;
+    }
+}

@@ -1,0 +1,264 @@
+@import "flexbox";
+
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: -110%;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    z-index: 12;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    padding: 40px 20px 30px 0;
+    .closeSidebar{
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 1;
+        &::before {
+            content: "";
+            top: 8px;
+            left: 5px;
+            width: 23px;
+            height: 3px;
+            position: absolute;
+            background: #000;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+        }
+        &::after {
+            content: "";
+            top: 8px;
+            left: 5px;
+            width: 23px;
+            height: 3px;
+            position: absolute;
+            background: #000;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+        }
+    }
+    &.show{
+        display: block;
+        left: 0;
+    }
+    ul{
+        li{
+            a{
+                padding: 15px 10px 15px 30px;
+                display: block;
+                border-left: 8px solid transparent;
+                color: #616161;
+                font-size: 18px;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: calc(50% - 3px);
+                    left: 10px;
+                    transform: translateY(-50%);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position-y: bottom;
+                    width: 15px;
+                }
+            }
+            &.active,
+            &:hover{
+                a{
+                    border-color: #34268d;
+                    color: #34268d;
+                    &::before{
+                        background-position-y: top;
+                    }
+                }
+            }
+            &.goals{
+                a{
+                    &::before{
+                        background-image: url('../img/menu-icon4.svg');
+                        height: 15px;
+                    }
+                }
+            }
+            &.assets-liabilities{
+                a{
+                    &::before{
+                        background-image: url('../img/menu-icon3.svg');
+                        height: 16px;
+                    }
+                }
+            }
+            &.financial-flow{
+                a{
+                    &::before{
+                        background-image: url('../img/menu-icon6.svg');
+                        height: 15px;
+                    }
+                }
+            }
+            &.portfolio{
+                a{
+                    &::before{
+                        background-image: url('../img/menu-icon5.svg');
+                        height: 14px;
+                    }
+                }
+            }
+            &.control{
+                a{
+                    &::before{
+                        background-image: url('../img/menu-icon1.svg');
+                        height: 17px;
+                    }
+                }
+            }
+            &.common{
+                a{
+                    &::before{
+                        background-image: url('../img/menu-icon2.svg');
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .sidebar{
+        position: inherit;
+        height: auto;
+        max-width: 100%;
+        width: 225px;
+        padding-right: 0;
+        ul{
+            li{
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+        .closeSidebar{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1240px){
+    .sidebar{
+        width: 280px;
+        ul{
+            li{
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .sidebar{
+        width: 325px;
+        ul{
+            li{
+                a{
+                    padding: 20px 10px 20px 93px;
+                    cursor: pointer;
+                    &::before{
+                        left: 40px;
+                        width: 32px;
+                    }
+                }
+                &.goals {
+                    a{
+                        &::before{
+                            height: 32px;
+                        }
+                    }
+                }
+                &.assets-liabilities{
+                    &:hover{
+                        a{
+                            &::before{
+                                height: 34px;
+                            }
+                        }
+                    }
+                    a{
+                        &::before{
+                            height: 33px;
+                        }
+                    }
+                }
+                &.financial-flow{
+                    a{
+                        &::before{
+                            height: 32px;
+                        }
+                    }
+                }
+                &.portfolio{
+                    a{
+                        &::before{
+                            height: 30px;
+                        }
+                    }
+                }
+                &.control{
+                    a{
+                        &::before{
+                            height: 35px;
+                        }
+                    }
+                }
+                &.common{
+                    a{
+                        &::before{
+                            height: 31px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1600px){
+    .sidebar {
+        padding-top: 140px;
+        ul{
+            li{
+                margin-bottom: 15px;
+                a{
+                    padding: 28px 10px 28px 93px;
+                }
+            }
+        };
+    }
+}

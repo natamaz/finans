@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Мой портфель</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user-account.css">
+</head>
+
+<body>
+
+    <!-- build:section layout.user_header-->
+    <!-- /build -->
+
+    <div class="wrapper">
+        <!-- build:section layout.userAcc_sidebar-->
+        <!-- /build -->
+        <div class="content">
+            <div class="content__blk">
+                <div class="content__blk_heading">
+                    <h2>Мой портфель</h2>
+                </div>
+                <div class="content__blk_body">
+                    <div class="flex-text">
+                        <div class="item">
+                            <p>Собрав и оценив необходимую информацию по финансовой динамике и долгосрочным финансовым целям, Вы увидите, насколько эти категории соотносятся друг с другом. Это позволит визуально оценить соответствие первого второму, а также
+                                достижимость Ваших целей и мечт. Такой анализ позволит Вам </p>
+                        </div>
+                        <div class="item">
+                            <p>регулировать своевременность финансовых покупок, а также проверять, как повлияет на финансовое развитие снижение тех или иных затрат, а также увеличение потенциального дохода.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__blk">
+                <div class="content__blk_heading">
+                    <h2>Графики потенциального дохода, затрат и остатка<span class="tooltip">?</span></h2>
+                    <div class="tooltip_hidden">
+                        <div class="close-tooltip">x</div>
+                        <p>Этот график показывает Ваш потенциальный доход, если Вы будете дисциплинированно откладывать сумму, которую проанализировали на предыдущем этапе (зеленая линия), а также остаток от этого дохода, который Вы получите, если будете
+                            реализовывать свои финансовые цели (красная линия). Важно следить, чтобы остаток не уходил ниже нуля, ведь это значит, что у Вас закончились средства.
+                        </p>
+                    </div>
+                </div>
+                <div class="content__blk_body">
+                    <div class="ct-chart graphView-1" id="chart1"></div>
+                    <div class="labelGraph">
+                        <i class="icon-yahta"></i>
+                        <span>- окончание трудоспособного возроста</span>
+                    </div>
+                    <ul class="footnote">
+                        <li>
+                            <p>Рекомендуемая эффективная доходность портфеля с учетом риск-профиля: <span>10,9 %</span></p>
+                        </li>
+                        <li>
+                            <p>Вероятность достижения долгосрочных целей: <span>92 %</span></p>
+                        </li>
+                    </ul>
+                    <!-- <img src="../img/graph8.jpg" alt=""> -->
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- build:section layout.footer-->
+    <!-- /build -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/chartist.min.js"></script>
+    <script src="../js/chartist-plugin-legend.min.js"></script>
+    <script src="../js/chartist-plugin-axistitle.min.js"></script>
+    <script src="../js/chartist-goal-line.min.js"></script>
+
+    <script>
+        var labelsLine = ['2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028'],
+            dataLine1 = [0, 21, 34, 44, 60, 80, 100],
+            dataLine2 = [0, 15, 19, 30, 40, 50, 70, 80, 100],
+            dataLine3 = [null, 0, 10, 21, 24, 46, 60, 63, 70, 100],
+            dataLine4 = [null, 0, 5, 15, 22, 41, 55, 58, 60, 85],
+            legendNames = ['- потенциальный доход', '- остаток', '- затрати на цели', '- line4 '],
+            axisX = "год",
+            axisY = "тыс. руб.",
+            linePoint = 40, //координата для вертикальной линии
+            iconUrl = '../img/graph-icon1.png'
+    </script>
+
+    <script src="../js/script.min.js"></script>
+    <script src="../js/user-account.min.js"></script>
+    <script src="../js/portfolio.min.js"></script>
+</body>
+
+</html>

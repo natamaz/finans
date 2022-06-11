@@ -1,0 +1,59 @@
+@import "flexbox";
+
+
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 2;
+    &__wrap{
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(space-between);
+    }
+    &__logo{
+        display: inline-block;
+        height: 18px;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    &__btn{
+        display: inline-block;
+        border-radius: 5px;
+        padding: 10px 15px 9px;
+        border: 2px solid #77adf6;
+        color: #ffffff;
+        font-size: 14px;
+        &:hover{
+            box-shadow: 10px 15px 27px 2px rgba(8, 5, 35, 0.21);
+            background-image: linear-gradient(to bottom, #3523ac 0%, #75acf6 100%);
+            border: none;
+            padding: 12px 17px 11px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .header{
+        &__logo {
+            height: 28px;
+        }
+        &__btn{
+            font-size: 18px;
+            padding: 18px 24px 15px;
+            &:hover{
+                padding: 22px 26px 15px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px){
+    .header{
+        padding: 52px 0;
+    }
+}

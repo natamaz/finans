@@ -1,0 +1,102 @@
+@import "libs/fonts";
+@import "libs/fontello";
+@import "libs/footer";
+@import "libs/popups";
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+	font-family: 'GothamPro';
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul,ol{
+  margin: 0;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+ul li,ol li{
+  margin: 0;
+}
+
+.clearfix{
+  &:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    clear: both;
+    height: 0;
+  }
+}
+
+strong{
+  font-family: 'GothamPro-Bold';
+}
+
+button{
+  cursor: pointer;
+}
+
+.container{
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+}
+.blueBtn{
+  box-shadow: 10px 15px 27px 2px rgba(8, 5, 35, 0.21);
+  border-radius: 5px;
+  background-image: linear-gradient(to bottom, #3523ac 0%, #75acf6 100%);
+  display: inline-block;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  &:hover{
+    background-image: linear-gradient(to bottom, #75acf6 0%, #3523ac 100%);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container{
+    padding: 0 20px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .blueBtn{
+    font-size: 18px;
+    padding: 26px 40px;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+
+  .container{
+    width: 1310px;
+    padding: 0;
+  }
+
+}
+
+
+
+

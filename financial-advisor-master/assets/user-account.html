@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мои Цели</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/user-account.css">
+</head>
+<body>
+
+<!-- build:section layout.user_header-->
+<!-- /build -->
+
+<div class="wrapper">
+    <!-- build:section layout.userAcc_sidebar-->
+    <!-- /build -->
+    <div class="content">
+        <div class="content__blk">
+            <div class="content__blk_heading">
+                <h2>Мои Цели</h2>
+            </div>
+            <div class="content__blk_body">
+                <div class="flex-text">
+                    <div class="item">
+                        <p>Первый этап – постановка жизненных целей – крайне важен для будущего финансового планирования. Долгосрочный фокус внимания позволяет оценивать наиболее важные приоритеты, а оцифровка целей позволяет оценить их «стоимость» и адекватность. </p>
+                    </div>
+                    <div class="item">
+                        <p>В таблице ниже занесите все Ваши цели и мечты с оценкой затрат на их реализацию. Сгруппируйте их в категории Финансовой безопасности (то, что позволит Вам прожить при изменении текущего заработка), Финансовая защита (то, что входит в план стабильности развития Ваших близких и Вас), а также Финансовая свобода (то, что позволит реализовать Ваши цели и мечты).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__blk">
+            <div class="content__blk_heading">
+                <h2>График финансовых затрат на будущие цели <span class="tooltip">?</span></h2>
+                <div class="tooltip_hidden">
+                    <div class="close-tooltip">x</div>
+                    <p>Этот график показывает суммарное накопление затрат на Ваши цели и мечты, а пиктограммы под ним напоминают о времени их получения.</p>
+                </div>
+            </div>
+            <div class="content__blk_body withGraph">
+                <div class="ct-chart graphView-2" id="chart2"></div>
+                <div class="ct-chart iconsGraph" id="chart3"></div>
+                <!-- <img src="../img/graph1.jpg" alt="graph1"> -->
+                <!-- <img src="../img/graph2.jpg" alt="graph2"> -->
+            </div>
+        </div>
+
+        <div class="content__blk">
+            <div class="content__blk_body withTable">
+                <div class="table">
+                    <div class="row head">
+                        <div class="cell">
+                            <h2>Постановка целей<span class="tooltip">?</span></h2>
+                            <div class="tooltip_hidden">
+                                <div class="close-tooltip">x</div>
+                                <p>Колонка «Приоритеты» предлагает ранжирование целей, которые важно учесть в первую очередь.</p>
+                                <p>Их необязательно придерживаться, но это, что система считает важным учесть в Вашем целеполагании, исходя из риск-профиля.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cell"></div>
+                        <div class="cell">
+                            <p>Приоритет</p>
+                        </div>
+                        <div class="cell">
+                            <p>Расходы, млн. руб.</p>
+                        </div>
+                        <div class="cell">
+                            <p>Единоразово</p>
+                        </div>
+                        <div class="cell">
+                            <p>Начало, год</p>
+                        </div>
+                        <div class="cell">
+                            <p>Окончание, год</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <p>Финансовая безопасность</p>
+                        </div>
+                        <div class="cell">
+                            <div class="insideTable">
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Резервный фонд</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell">
+                                        <p>Да</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2021</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="panel">
+                                        <form>
+                                            <button class="deleteRow"></button>
+                                            <button class="editRow open"></button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Страхование жизни</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>0,1</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell">
+                                        <p>2019</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2060</p>
+                                    </div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Закрытие базовых бытовых потребностей</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell"> </div>
+                                    <div class="insCell"></div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Закрытие медицинских потребностей</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell"> </div>
+                                    <div class="insCell"></div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <form class="addForm">
+                                    <div class="insRow">
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="save_icon">
+                                            <a href="javascript:void(0)" ><i class="icon-floppy"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="insRow">
+                                        <button class="saveData saveData-aim" data-id="1" data-type="user_aim">сохранить</button>
+                                    </div>
+                                </form>
+                                <div class="insRow">
+                                    <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <p>Финансовая защита</p>
+                        </div>
+                        <div class="cell">
+                            <div class="insideTable">
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Обучение детей</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>0,5</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell">
+                                        <p>2032</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2038</p>
+                                    </div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Забота о родственниках</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell"></div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Закрытие эмоциональных потребностей</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>0,05</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell">
+                                        <p>2025</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2060</p>
+                                    </div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <form class="addForm">
+                                    <div class="insRow">
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="save_icon">
+                                            <a href="javascript:void(0)" ><i class="icon-floppy"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="insRow">
+                                        <button class="saveData saveData-aim" data-id="1" data-type="user_aim">сохранить</button>
+                                    </div>
+                                </form>
+                                <div class="insRow">
+                                    <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <p>Финансовая свобода</p>
+                        </div>
+                        <div class="cell">
+                            <div class="insideTable">
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Саморазвитие и обучение</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>0,1</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell">
+                                        <p>2035</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2060</p>
+                                    </div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Недвижимость на пенсии</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>30</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>Да</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2045</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Недвижимость до пенсии</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>10</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>Да</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2033</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Благотворительность</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>0,05</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell">
+                                        <p>2025</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2060</p>
+                                    </div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Наследние</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>50</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell">
+                                        <p>2060</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Автомобиль</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>5</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>Да</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2022</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Автомобиль</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell">
+                                        <p>Да</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2023</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Хобби</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>0,1</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell"></div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Пенсионный капитал и лайфстайл</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>0,1</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell">
+                                        <p>2040</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2060</p>
+                                    </div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <div class="insRow">
+                                    <div class="insCell">
+                                        <p>Путешествия</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>0,1</p>
+                                    </div>
+                                    <div class="insCell"></div>
+                                    <div class="insCell">
+                                        <p>2040</p>
+                                    </div>
+                                    <div class="insCell">
+                                        <p>2060</p>
+                                    </div>
+                                    <div class="panel">
+                                        <a href="javascript.void(0)" class="deleteRow"></a>
+                                        <a href="javascript.void(0)" class="editRow"></a>
+                                    </div>
+                                </div>
+                                <form class="addForm">
+                                    <div class="insRow">
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="insCell">
+                                            <input type="text">
+                                        </div>
+                                        <div class="save_icon">
+                                            <a href="javascript:void(0)" ><i class="icon-floppy"></i></a>
+                                        </div>
+                                        <div class="panel">
+                                            <a href="javascript.void(0)" class="deleteRow"></a>
+                                            <a href="javascript.void(0)" class="editRow"></a>
+                                        </div>
+                                    </div>
+                                    <div class="insRow">
+                                        <button class="saveData saveData-aim" data-id="1" data-type="user_aim">сохранить</button>
+                                    </div>
+                                </form>
+                                <div class="insRow">
+                                    <a href="javascript:void(0)" class="addMore">+ добавить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- build:section layout.footer-->
+<!-- /build -->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/chartist.min.js"></script>
+<script src="../js/chartist-plugin-legend.min.js"></script>
+<script src="../js/chartist-plugin-axistitle.min.js"></script>
+
+
+<script>
+    //График финансовых затрат на будущие цели
+    var labelList = ['2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028'],
+            dataFirstLine = [null, 0, 10, 21, 24, 46, 60, 63, 70, 100],
+            dataSecondLine = [null, 0, 5, 15, 22, 41, 55, 58, 60, 85],
+            axisTitleX = "год",
+            axisTitleY = "Затраты, млн. руб.";
+
+    //с пиктограмами
+    img1 = '../img/graph-icon2.png',
+            img2 = '../img/graph-icon3.png',
+            img3 = '../img/graph-icon4.png',
+            img4 = '../img/graph-icon5.png',
+            img5 = '../img/graph-icon6.png',
+            dataArr = [2020, 2022, 2024, 2037, 2045],
+            startYear = 2019,
+            lasYear = 2079,
+            divisor = 10
+</script>
+
+<script src="../js/script.min.js"></script>
+<script src="../js/user-account.min.js"></script>
+<script src="../js/user-account-graph.min.js"></script>
+
+</body>
+</html>
